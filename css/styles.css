@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  margin-top: 30px;
+  flex: 2;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  margin-top: 15px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 40px auto 0px auto;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #76737e;
+}
+
+input:focus {
+  border-bottom-color: #3376be;
+  outline: none;
+}
+
+#forgot-password-link {
+  display: block;
+  text-align: right;
+  color: #3376be;
+  text-decoration: none;
+}
+
+#register-link,
+#login-link {
+  color: #3376be;
+  text-decoration: none;
+}
+
+.collapse {
+  visibility: collapse;
+  color: red;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.collapse.show {
+  display: block;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  margin: 50px auto 0 auto;
+  background-color: #3376be;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ddd;
+}
+
+.navigation-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navigation-links span {
+  display: inline; 
+}
+
+.navigation-links a {
+  display: inline; 
+  margin-left: 5px; 
+  color: #3376be;
+  text-decoration: none;
+}
+
+.navigation-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+.theme-toggle {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.theme-toggle button {
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #17171e;
+  color: white;
+}
+
+.dark-mode input {
+  background-color: #17171e;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #76737e;
+}
+
+.dark-mode .theme-toggle button {
+  background-color: transparent;
+  color: white;
+}
+
+.dark-mode .form-container {
+  background-color: #17171e;
+}
+
+#message{
+    color: #76737e;
+    text-align: center;
+}
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  margin-bottom: 10px;
+}
+
