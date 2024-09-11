@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Login</h1>
+
+        <input type="email" id="email" placeholder="Email" />
+        <div id="email-error" class="collapse">Email is required.</div>
+
+        <input type="password" id="password" placeholder="Password" />
+        <div id="password-error" class="collapse">Password is required.</div>
+
+        <span><a href="./ForgetPassword.html" id="forgot-password-link">Forgot password?</a></span>
+
+        <button id="login-btn">Login</button>
+
+        <div class="navigation-links">
+          <span>Don't have an account? <a href="./Register.html" id="register-link">Register here</a></span>
+        </div>
+        
+
+        <div class="theme-toggle">
+          <button id="theme-btn">🌑 Dark Theme</button>
+        </div>
+      </div>
+
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

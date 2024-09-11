@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Register</h1>
+        <input type="text" id="userName" placeholder="User Name" />
+        <div id="name-error" class="collapse"></div>
+
+        <input type="email" id="email" placeholder="Email" />
+        <div id="email-error" class="collapse"></div>
+
+        <input type="password" id="password" placeholder="Password" />
+        <div id="password-error" class="collapse"></div>
+
+        <input type="password" id="confirmPwd" placeholder="Confirm Password" />
+        <div id="confirm-error" class="collapse"></div>
+
+        <button id="register-btn">Register</button>
+
+        <div class="navigation-links">
+          <span>
+            Already have an account?
+            <a href="LoginPage.html" id="login-link">Login here</a>
+          </span>
+        </div>
+
+        <div class="theme-toggle">
+          <button id="theme-btn">🌑 Dark Theme</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/register.js"></script>
+    <script type="module" src="js/firebase-config.js"></script>
+  </body>
+</html>
